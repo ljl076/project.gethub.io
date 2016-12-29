@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*body{*/
+            /*background-color: black;*/
+        /*}*/
+        .box{
+            width: 330px;
+            height: 475px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .box:after{
+            width: 80px;
+            height: 500px;
+            content: '';
+            position: absolute;
+            left:-190px;
+            top:0;
+            background: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,.5),rgba(255,255,255,0));
+            transform: skew(-25deg);
+        }
+        .box:hover:after{
+            left:400px;
+            transition: all 1s;
+
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <img src="images/jd.jpg" alt=""/>
+</div>
+</body>
+</html>
